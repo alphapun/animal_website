@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <title>Animal Detector</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                overflow:hidden;
+                margin: 0;
+            }
+            header{
+                width:100%;
+                height: 100vh;
+                background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url("pexels-johannes-plenio-1423600.jpg");
+                background-size: cover;
+                font-family: 'Archivo', sans-serif;
+            }
+            .h-txt{
+                max-width: 650px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                color: antiquewhite;
+            }
+            h1{
+                margin-bottom: 4vh;
+                font-size: 5.5em;
+            }
+            #info{
+                margin: 10vh;
+                text-align: left;
+            }
+            label{
+                font-size: 3vh;
+            }
+            input[type=text] {
+                width: 40%;
+                padding: 2px 1px;
+                box-sizing: border-box;
+            }
+            select {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                background-color: #f9f9f9;
+                color: #333;
+                border: 1px solid #ccc;
+                padding: 5px;
+            }
+        </style>
+        <header>
+            <section class="h-txt">
+                <h1 style="font-family:'Archivo', sans-serif">ANIMAL DETECTOR</h1>
+                <div>
+                    <form class="info" action="" methods='POST'>
+                        <label>Name</label> <br>  
+                        <input type="text" name="name" required="1"> <br> <br>  
+                        <label>Phone Number</label> <br> 
+                        <input type="text" name="phone" required="1"><br> <br>
+                        <label for="options">Location</label> <br>
+                        <input type="text" name="location" required="1"><br> <br>
+                        <input type="submit" value="Submit" style="
+                        width: 94px;
+                        height: 25px;
+                        margin-top: 10px;
+                        border: 10px black;
+                        border-radius: 3px;">
+                    </form>
+                </div>
+            </section>
+        </header> 
+    </body>
+</html>
